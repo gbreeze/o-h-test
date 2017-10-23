@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37C9CC85-A8CA-4644-B2C9-0C07C7323118}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Test1</RootNamespace>
+    <AssemblyName>Test1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CpAvOpenhomeOrgCredentials1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgCredentials1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgDebug1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgDebug1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgExakt1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgExakt1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgExakt2.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgExakt2.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgExakt3.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgExakt3.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgInfo1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgInfo1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgMediaServer1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgMediaServer1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgNetworkMonitor1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgNetworkMonitor1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgPlaylist1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgPlaylist1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgPlaylistManager1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgPlaylistManager1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgProduct1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgProduct1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgProduct2.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgProduct2.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgRadio1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgRadio1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgReceiver1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgReceiver1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgSender1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgSender1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgSender2.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgSender2.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgTime1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgTime1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgTransport1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgTransport1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgVolume1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgVolume1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgVolume2.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgVolume2.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpAvOpenhomeOrgVolume3.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpAvOpenhomeOrgVolume3.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpLinnCoUkCloud1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpLinnCoUkCloud1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpLinnCoUkExaktInputs1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpLinnCoUkExaktInputs1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpLinnCoUkFlash1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpLinnCoUkFlash1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpLinnCoUkPrivacy1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpLinnCoUkPrivacy1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpLinnCoUkVolkano1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpLinnCoUkVolkano1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpOpenhomeOrgSubscriptionLongPoll1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpOpenhomeOrgSubscriptionLongPoll1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpOpenhomeOrgTestBasic1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpOpenhomeOrgTestBasic1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpOpenhomeOrgTestLights1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpOpenhomeOrgTestLights1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgAVTransport1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgAVTransport1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgAVTransport2.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgAVTransport2.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgConnectionManager1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgConnectionManager1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgConnectionManager2.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgConnectionManager2.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgContentDirectory1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgContentDirectory1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgContentDirectory2.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgContentDirectory2.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgContentDirectory3.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgContentDirectory3.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgDimming1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgDimming1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgRenderingControl1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgRenderingControl1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgRenderingControl2.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgRenderingControl2.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgScheduledRecording1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgScheduledRecording1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgScheduledRecording2.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgScheduledRecording2.net.dll</HintPath>
+    </Reference>
+    <Reference Include="CpUpnpOrgSwitchPower1.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNetGeneratedProxies.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\CpUpnpOrgSwitchPower1.net.dll</HintPath>
+    </Reference>
+    <Reference Include="ohNet.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ohNet.NET.1.15.2628.114\lib\portable-net45+netcore45+wpa81+wp8\ohNet.net.dll</HintPath>
+    </Reference>
+    <Reference Include="Rssdp, Version=3.5.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rssdp.3.5.7\lib\net45\Rssdp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
