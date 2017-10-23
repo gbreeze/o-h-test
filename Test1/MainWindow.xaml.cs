@@ -38,9 +38,12 @@ namespace Test1
         public async void SearchForDevices()
         {
             // This code goes in a method somewhere.
-            using (var deviceLocator = new SsdpDeviceLocator("192.168.0.02"))
+            using (var deviceLocator = new SsdpDeviceLocator("192.168.0.2"))
             {
-                var foundDevices = await deviceLocator.SearchAsync("urn:av-openhome-org:service:Playlist:1"); // Can pass search arguments here (device type, uuid). No arguments means all devices.
+                // Can pass search arguments here (device type, uuid). No arguments means all devices.
+                // var foundDevices = await deviceLocator.SearchAsync("urn:av-openhome-org:service:Playlist:1");
+                var foundDevices = await deviceLocator.SearchAsync("urn:schemas-upnp-org:service:SwitchPower:1");
+                
                 this.Devices = foundDevices;
 
                 tbx.Text = "";
